@@ -4,155 +4,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name=”description” content="front end developer passionate about Javascript, React, HTML and web-design.
-        Check my latest work. A day without coding is an wasted day.">
-
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Design and Code: Responsive Portfolio Website</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet"> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css"> -->
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
 
+    <title>JONATHAN</title>
 </head>
 
 <body>
+
     <div class="wrapper-header">
         <header class="header">
             <h1>JONATHAN Front-end</h1>
-            <nav>
+            <nav class="header-row">
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li class="list-header" id="about">About</li>
+                    <li class="list-header" id="portfolio">Portfolio</li>
+                    <li class="list-header" id="Contact">Contact</li>
                 </ul>
             </nav>
         </header>
-        <!-- <div class="container">
-            <div class="sidebar">
+    </div>
 
-            </div> -->
-        <main class="flex-body">
+    <main class="flex-body">
+        <section class="about">
 
-            <section class="about">
-                <img class="profile" src="/img/John.jpg" alt="profile-pic">
 
-                <div class="about-content">
-                    <h2>Passionate <br> Web Developer</h2>
-                    <p>
-                        I am a webdeveloper based in Stockholm, Sweden. I've started
-                        an education to become a Front end Developer.
-                        have always liked technology ever since I was little and in recent years I have grown a big
-                        interest for programming. I do front-end development and I like to try new technologies and
-                        add them to my projects. Learning new frameworks/languages is not a problem and it's
-                        something that I always enjoy doing! for now im learning HTML & CSS in depth. But i also
-                        have knowledge of Javascript.
+            <div class="content">
 
-                    </p>
-                    <a class="action-btn" href="#"> Hire me</a>
-                </div>
-            </section>
+
+                <picture class="profile-content">
+                    <img class="profile" src="/img/John.jpg" alt="profile-pic">
+                </picture>
+                <div class="profile-section">
+
+                    <h2>Hi! I'm Jonathan.</h2>
+                    <p>I am a webdeveloper based in Stockholm, Sweden. I've started n education to become a Front
+                        end Developer.
+                        I do front-end development and I like to try new technologies
+                        and add them to my projects. Learning new frameworks/languages is not a problem and it's
+                        something that I always enjoy doing!
+                        For now im learning <span>Javascript</span> & CSS in depth. But i
+                        also have knowledge of Javascript. Hire me </p>
+                </div><!-- .card-content -->
+
+
+
+
+            </div>
+            </div>
+            <div class="show--mobile">
+                <p hidden>I am a webdeveloper based in Stockholm, Sweden. I've started n education to become a Front
+                    end Developer.
+
+            </div>
+        </section>
+    </main>
+
+    <section class="boxes">
+        <div class="box">
+            <i class="fas fa-database fa-5x"></i>
+            <h3>BACK-END</h3>
+            <p>For back-end development I mostly use NodeJS and MongoDB. Which helps me create secure webbapplication
+                and websites</p>
         </div>
-            <div class="wrapper">
-            <h3>my work</h3>
-            <section class="work">
-                <!-- this div has two classe, img area are one class, that will be seleted when styling css. left is the other class
-                    will Adding styles in css-->
-                <div class="image-area left">
-                    <img src="img/jekyll.jpg" alt="UHN Research website"/>
-                </div>
-                <div class="text-box">
-                    <div class="text-box-content">
-                        <h3>Jekyll Blog</h3>
-                        <p>Built using Jekyll and Sass.CSS preprocessor.Uses open graph for easy sharing on social media</p>
-                        <a href="#" target="_blank" class="button">view project</a>
-                    </div>
-                </div>
-            </section>
+        <div class="box">
+            <i class="fas fa-code fa-5x"></i>
+            <h3>FRONT-END</h3>
+            <p>All my code is versioned using Git and GitHub.My main JavaScript package manager is npm and my IDE is
+                Visual Studo Code using different extensions</p>
+        </div>
+    </section>
 
-            <section class="work">
-                <!-- this div has two classe, img area are one class, that will be seleted when styling css. left is the other class
-                    will Adding styles in css-->
-                <div class="image-area right">
-                    <img src="img/quiz.png" alt="UHN Research website"/>
-                </div>
-                <div class="text-box">
-                    <div class="text-box-content">
-                        <h2>Quiz application</h2>
-                        <p>focus on asynchronous communication agains an external RESTful web services through asynchronous calls.  The client-side code.
-                            Written in vanilla javascript, no libraries like jQuery.This is a quiz where the questions are fetched from an API. The quiz has a timer and a highscore list.
-                           Uses Web Storage to store highscore.
+    <main class="main-area">
 
-                        </p>
-                        <a href="#" target="_blank" class="button">view project</a>
-                    </div>
-                </div>
-            </section>
+        <div class="centered">
 
+            <section class="cards">
 
-            <section class="work">
-                <!-- this div has two classe, img area are one class, that will be seleted when styling css. left is the other class
-                    will Adding styles in css-->
-                <div class="image-area left">
-                    <img src="img/github.png" alt="UHN Research website"/>
-                </div>
-                <div class="text-box">
-                    <div class="text-box-content">
-                        <h2>Snippets</h2>
-                        <p>CRUD-application that handles snippets. The application is done using Node.js and Express.js as the application framework and Mongoose as the object modeling library. The application  have full CRUD functionality regarding snippets, whereby a user is be able to create, read, update and delete snippets.</p>
-                        <a href="#" target="_blank" class="button">view project</a>
-                    </div>
-                </div>
-            </section>
-            <section class="work">
-                <!-- this div has two classe, img area are one class, that will be seleted when styling css. left is the other class
-                    will Adding styles in css-->
-                <div class="image-area right">
-                    <img src="img/finder.png" alt="UHN Research website"/>
-                </div>
-                <div class="text-box">
-                    <div class="text-box-content">
-                        <h2>Githunb finder</h2>
-                        <p>Simple application to fetch Gihub API so you can search for github user and get their latest repos and info. Ascyn await. UI class.</p>
-                        <a href="#" target="_blank" class="button">view project</a>
-                    </div>
-                </div>
-            </section>
+                <article class="card">
+                    <a href="https://github.com/joni43/githubfinder">
+                        <picture class="thumbnail">
+                            <img src="/img/finder.png" alt="A banana that looks like a bird">
+                        </picture>
+                        <div class="card-content">
 
+                            <h2>Jekyll Blog</h2>
+                            <p>TBuilt using Jekyll and Sass.CSS preprocessor.Uses open graph for easy sharing on social
+                                media</p>
+                        </div><!-- .card-content -->
 
-                </div>
-        </main>
-        <footer class="footer-content">
+                    </a>
 
-            <div class="footer-left">
+                </article><!-- .card -->
 
-                <h3>Kontakta<span> mig</span></h3>
-                <div class="social-icons">
+                <article class="card">
+                    <a href="#">
+                        <picture class="thumbnail">
+                            <img src="/img/github.png" alt="Norwegian boller">
+                        </picture>
+                        <div class="card-content">
+                            <h2>Github finder</h2>
+                            <p>Simple application to fetch Gihub API so you can search for github user and get their
+                                latest repos and
+                                info.</p>
+                        </div><!-- .card-content -->
+                    </a>
+                </article><!-- .card -->
+
+                <article class="card">
+                    <a href="#">
+                        <picture class="thumbnail">
+                            <img src="/img/jekyll.jpg" alt="A dinosaur wearing an aluminium jacket">
+                        </picture>
+                        <div class="card-content">
+                            <h2>Jekyll Blog</h2>
+                            <p>Built using Jekyll and Sass.CSS preprocessor.Uses open graph for easy sharing on social
+                                media. </p>
+                        </div><!-- .card-content -->
+                    </a>
+                </article><!-- .card -->
+
+                <article class="card">
+                    <a href="#">
+                        <picture class="thumbnail">
+                            <img src="/img/quiz.png" alt="Chocolate filled boller">
+                        </picture>
+                        <div class="card-content">
+                            <h2>Quiz application </h2>
+                            <p>This is a quiz where the questions are fetched from an API. Save score on localstorage.</p>
+                        </div><!-- .card-content -->
+                    </a>
+                </article><!-- .card -->
+
+            </section><!-- .cards -->
+
+        </div><!-- .centered -->
+
+    </main>
+    <footer class="footer-content">
+
+        <div class="footer-left">
+
+            <h3>Kontakta<span> mig</span></h3>
+            <div class="social-icons">
                 <ul>
-                <li class="fas fa-envelope fa-3x"></li>
-                <li class="fab fa-twitter fa-3x"></li>
-                <li class="fab fa-linkedin fa-3x"></li>
-                <li class="fab fa-github fa-3x"></li>
+                    <li class="fas fa-envelope fa-3x"></li>
+                    <li class="fab fa-twitter fa-3x"></li>
+                    <li class="fab fa-linkedin fa-3x"></li>
+                    <li class="fab fa-github fa-3x"></li>
                 </ul>
             </div>
-            </div>
-            </div>
+        </div>
 
 
 
-            <div class="footer-right">
-                <form action="#" method="post">
 
-                    <input type="text" name="email" placeholder="Email" />
-                    <textarea name="message" placeholder="Message"></textarea>
-                    <button>DONT PUSH!</button>
+        <div class="footer-right">
+            <form action="#" method="post">
 
-                </form>
-            </div>
-        </footer>
-    </div>
+                <input type="text" name="email" placeholder="Email">
+                <textarea name="message" placeholder="Message"></textarea>
+                <button>DONT PUSH!</button>
+
+            </form>
+        </div>
+    </footer>
+    <script>
+    </script>
 </body>
+<script src="app.js"></script>
 
 </html>
