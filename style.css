@@ -48,7 +48,7 @@ body {
 /* <<--------------------- HEADER ----------------------> >*/
 .header {
 
-  background-color: #9bb8ce;
+  background:linear-gradient( rgba(87, 145, 172, 0.5), rgba(255, 255, 255, 0.5) ), #9bb8cefd;
 }
 .wrapper-header {
   display: flex;
@@ -64,7 +64,7 @@ body {
 .header-row {
 
   display: flex;
-  font-size: 1.5em;
+  font-size: 2.5em;
   justify-content:center;
 }
 nav ul {
@@ -93,7 +93,7 @@ a {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  background: url("/img/surrealism.jpg");
+  background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/img/surrealism.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -139,7 +139,8 @@ img {
   justify-content: center;
 }
 .profile-section {
-	background: var(--primary);
+  background:linear-gradient( rgba(87, 145, 172, 0.5), rgba(255, 255, 255, 0.5) ), #9bb8cefd;
+
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.966);
   grid-gap: 10px;
   color: rgb(0, 0, 0);
@@ -179,9 +180,11 @@ img {
 .box {
 
   font-weight: 100;
+  margin: 2px;
   margin-bottom: 2em;
   font-size: 18px;
-  background:var(--primary);
+    background:linear-gradient( rgba(87, 145, 172, 0.5), rgba(255, 255, 255, 0.5) ), #9bb8cefd;
+
   text-align: center;
   padding:1.5rem 2rem;
   box-shadow: var(--shadow);
@@ -227,7 +230,8 @@ img {
 .footer-content,
 .skills-content {
   background: url(/img/Pattern.png) left top repeat-x;
-  background-color: var(--primary);;
+  background:linear-gradient( rgba(87, 145, 172, 0.5), rgba(255, 255, 255, 0.5) ), #9bb8cefd;
+
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
