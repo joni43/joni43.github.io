@@ -1,357 +1,274 @@
-/* CSS Variables */
-:root {
-  --primary:#ddd;
-  --dark:#333;
-  --light:#fff;
-  --shadow: 0 1px 5 px rgba(104, 104, 104, 08.);
-}
-html {
-  /* A system font stack so things load nice and quick! */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 900;
-  font-size: 10px;
-}
-
 body {
-  background: url("/img/surrealism.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  font-family: "Oswald", sans-serif;
+  background-color: #D7E6F5;
+}
+img {
+  width: 3000%;
+}
+* {
+  margin: 0;
+}
+.box-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 600px;
+  list-style-type: none;
+  background-color: #fff;
+
+}
+.boxa {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/img/pexels-photo-160107.jpeg);
   background-size: cover;
-  background-repeat: no-repeat;
-  /* background-size: 340px, auto; */
-  min-height: calc(100vh - 100px);
-  margin: 50px;
-  /* background: white; */
-  background-attachment: fixed;
-  letter-spacing: -1px;
+  background-position: top;
+  position: relative;
+  flex: 0 0 100%;
+  width: 45%;
+}
+.boxb {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/img/study.jpeg);
+
+  background-size: cover;
+  background-position: top;
+  position: relative;
 }
 
-
-/* Each item in our grid will contain numbers */
-.item {
-  /* We center the contents of these items. You can also do this with flexbox too! */
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  border: 5px solid rgba(0, 0, 0, 0.03);
-  border-radius: 3px;
-  font-size: 35px;
-  background-color: var(--yellow); /* best colour */
-}
-
-.item p {
-  margin: 0 0 5px 0;
+.boxb,
+.boxc {
+  flex: 0 0 65%;
+  width: 53%;
 }
 
 /* <<--------------------- HEADER ----------------------> >*/
 .header {
-
-  background:linear-gradient( rgba(87, 145, 172, 0.5), rgba(255, 255, 255, 0.5) ), #9bb8cefd;
+    background-color: #fff;
 }
-.wrapper-header {
+.header {
   display: flex;
-  flex-flow: row wrap;
+
+  /* flex-flow: row wrap; */
   font-weight: bold;
-  text-align: center;
+  text-align: right;
 }
 
-.wrapper-header > * {
+
+.header > * {
   padding: 10px;
   flex: 1 100%;
 }
-.header-row {
 
+.header-row {
   display: flex;
-  font-size: 2.5em;
-  justify-content:center;
+  /* justify-content: center; */
+  font-size: 1em;
+}
+.header-row span {
+  color: #104ab6;
+  border-bottom: 1px solid rgb(20, 26, 80);
 }
 nav ul {
   display: flex;
-  width: 100%;
+  /* width: 8%; */
   list-style: none;
-  justify-content: space-around;
 }
 nav ul li {
-  flex: auto;
   padding: 1em;
 }
-#about {
-  padding:20px;
+.header-row span:hover {
+  border-bottom: none;
+}
+
+.header__text-box {
+  /* position: absolute;
+    top:40%;
+    left:50%; */
+  display: flex;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.heading-primary {
+  color: #104ab6;
+  text-transform: uppercase;
+
+  backface-visibility: hidden;
+  /* margin-bottom: 6rem; */
+}
+.heading-primary--main {
+  display: block;
+  font-size: 3rem;
+  font-weight: 200;
+  letter-spacing: 2rem;
+
+}
+
+/* <----Footer social icons -----> */
+.footer-content  {
+
+    margin-top:20px;
+    justify-content: flex-start;
+}
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+    margin-right: 80px;
+}
+
+.social-icons  > li {
+  border-radius: 50%;
+  text-align: center;
+  padding: 1.1em;
+  color: #2a5daf;
+  cursor: pointer;
+}
+.list-header span {
   cursor: pointer;
 }
 
-/* <<-------------------- flex-body -------------------->> */
-/* All a tags inside flex-body*/
-a {
-  color: #63656d;
-  cursor: pointer;
-  text-decoration: none;
-}
-.flex-body {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/img/surrealism.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
+
+/*  <-----------   ABOUT SECTION  --------->  */
+.about-container{
+    margin-top:70px;
 }
 .about {
+  margin: 40px;
+  width: 400px;
+}
+.about h1 {
   display: flex;
-  text-align: center;
-  justify-content:center;
-  align-items:center;
-  min-height: 80vh;
-  display: flex;
-  margin: 1px;
-}
-.content {
-
-  height: 100%;
-  float: left;
-  padding: 30px 40px;
-  box-sizing: border-box;
-}
-
-.profile {
-  border-radius: 100%;
-
-  max-width: 20%;
-  margin: 5%;
-  margin-bottom: 20px;
-}
-img {
-  width: 300px;
-}
-
-img {
-	display: block;
-	border: 0;
-	width: 100%;
-	height: auto;
-}
-
-.profile-content {
-  display:flex;
   justify-content: center;
-}
-.profile-section {
-  background:linear-gradient( rgba(87, 145, 172, 0.5), rgba(255, 255, 255, 0.5) ), #9bb8cefd;
-
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.966);
-  grid-gap: 10px;
-  color: rgb(0, 0, 0);
-  font-weight: 100;
-  margin-bottom: 2em;
-  font-size: 22px;
-
-  line-height: 25px;
-  font: bold;
-  font-family: "Roboto", sans-serif;
-  padding-bottom: 5px;
+  padding: 10px;
 }
 
-.profile-section a {
-	color: black;
+.img-profile {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.img-profile img {
+  margin: 10px;
+  border: 3px solid #000;
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+  max-width: 18vw;
 }
 
-.profile-section {
-	padding: 1.4em;
+/*  <-----------   PROJECTS SECTION  --------->  */
+.projects-title {
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    text-align: center
 }
-
-.profile-section h2 {
-	margin-top: 0;
-	margin-bottom: .5em;
-	font-weight: bold;
+.main-area {
+  margin: 35px;
+  margin-top:60px;
+  border-top: 8px solid #0846b9;
+  border-left:8px solid #0846b9;
+  border-right: 8px solid #0846b9;
+  border-bottom: 8px solid #0846b9;
 }
-
-.profile-section p {
-	font-size: 80%;
+.centered {
+    margin-top: 40px;
 }
+.cards {
 
-.boxes {
-
-  display:flex;
-  justify-content: space-between;
+    margin:10px;
 }
-.box {
-
-  font-weight: 100;
-  margin: 2px;
-  margin-bottom: 2em;
-  font-size: 18px;
-    background:linear-gradient( rgba(87, 145, 172, 0.5), rgba(255, 255, 255, 0.5) ), #9bb8cefd;
-
-  text-align: center;
-  padding:1.5rem 2rem;
-  box-shadow: var(--shadow);
-}
-
-
-/*  <-----------   PROJECT SECTION  --------->  */
 .card {
-	background: rgba(255, 255, 255, 0.568);
+  background: lightgray;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   grid-gap: 10px;
-  color: white;
+  color: rgb(173, 46, 46);
   font-weight: 100;
   margin-bottom: 2em;
   font-size: 22px;
 }
 
 .card a {
-	color: black;
+  color: black;
 }
 
 .card-content {
-	padding: 1.4em;
+  padding: 1.4em;
 }
 
 .card-content h2 {
-	margin-top: 0;
-	margin-bottom: .5em;
-	font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: bold;
 }
 
 .card-content p {
-	font-size: 80%;
-}
-.main-area {
-  padding-top:30px;
-  background: url(/img/Pattern.png) left top repeat-x;
-
+  font-size: 80%;
 }
 
-/* <------------------------FOOTER-----------------------> */
+/*  <-----------   FOOTER SECTION  --------->  */
 
-.footer-content,
-.skills-content {
-  background: url(/img/Pattern.png) left top repeat-x;
-  background:linear-gradient( rgba(87, 145, 172, 0.5), rgba(255, 255, 255, 0.5) ), #9bb8cefd;
-
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  width: 100%;
-  text-align: left;
-  padding: 50px 60px 40px;
-  overflow: hidden;
-}
-
-/* Footer left */
-
-.footer-content .footer-left {
-  float: left;
-}
-
-/* Kontakta mig */
-
-.footer-content h3 {
-  color: #ffffff;
-  font: normal 36px "Montserrat", sans-serif;
-}
-
-.footer-content h3 span {
-  color: #4e3603;
-}
-
-/* <----Footer social icons -----> */
-.social-icons {
+.footer-content {
   display: flex;
-  justify-content: center;
-}
-
-.social-icons > ul {
+  justify-content: space-between;
+  border-top: 1px solid #0846b9;
   width: 100%;
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
+  color:#104ab6;
+}
+.copyright {
+    display:flex;
+    justify-content: flex-start;
+
+}
+.name {
+    padding:40px;
+}
+.number {
+    display:flex;
+    justify-content: center;
 }
 
-.social-icons > ul > li {
-  background-color: #2c3e50;
-  border-radius: 50%;
-  text-align: center;
-  padding: 0.1em;
-  color: #fff;
-  cursor: pointer;
-}
-.footer-content .footer-right {
-  float: right;
-}
-
-/* <<-----------------------The contact form ------------------->>*/
-
-.footer-content form {
-  display: inline-block;
-}
-
-.footer-content form input,
-.footer-content form textarea {
-  display: block;
-  border-radius: 3px;
-  box-sizing: border-box;
-  background-color: #e5e6e9;
-  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
-  border: none;
-  resize: none;
-  font-size: 14px;
-  font-weight: normal;
-  color: #f8f8f8;
-  width: 400px;
-  padding: 18px;
-}
-
-.footer-content form input {
-  height: 55px;
-  margin-bottom: 15px;
-}
-
-.footer-content form textarea {
-  height: 100px;
-  margin-bottom: 20px;
-}
-
-.footer-content form button {
-  border-radius: 3px;
-  background-color: #33383b;
-  color: #ffffff;
-  border: 0;
-  padding: 15px 50px;
-  font-weight: bold;
-  float: right;
-}
-/* Flexbox da shit at of ya stuff */
+/*  <-----------   MEDIA QUERIES SECTION  --------->  */
 
 @media screen and (min-width: 440px) {
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-    .card {
-        flex: 0 1 calc(50% - 1em);
-    }
+  .card {
+    flex: 0 1 calc(50% - 1em);
+  }
+}
+img {
+  width: 300px;
+}
 
+img {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: auto;
 }
 @media screen and (max-width: 800px) {
   .content {
     /* background-color:green; */
-    flex-wrap:wrap-reverse;
+    flex-wrap: wrap-reverse;
   }
-
+  .footer-content {
+    background-color: orange;
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 60em) {
-  .cards{
+  .cards {
     /* background-color: green; */
   }
 
-    .card {
-        flex: 0 1 calc(25% - 1em);
-    }
-
+  .card {
+    flex: 0 1 calc(25% - 1em);
+  }
 }

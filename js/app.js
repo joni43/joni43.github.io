@@ -5,7 +5,7 @@
 // Select listan i headern
 const listHeader = document.querySelectorAll('.list-header')
 // Select the About
-const about = document.querySelector('.profile-content')
+const about = document.querySelector('.about-container')
 // Select the portfolio
 const portfolio = document.querySelector('.main-area')
 // Select the footer
@@ -32,4 +32,3 @@ function scrollIt (element) {
     left: 0,
     top: element.offsetTop
   })
-}

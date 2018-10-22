@@ -5,79 +5,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-
-    <title>JONATHAN</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Jonathan|FRONT-END</title>
 </head>
 
 <body>
-
-    <div class="wrapper-header">
-        <header class="header">
-            <nav class="header-row">
-                <ul>
-                    <li class="list-header" id="about">About</li>
-                    <li class="list-header" id="portfolio">Portfolio</li>
-                    <li class="list-header" id="Contact">Contact</li>
-                </ul>
-            </nav>
-        </header>
-    </div>
-
-    <main class="flex-body">
-        <section class="about">
-
-
-            <div class="content">
-
-
-                <picture class="profile-content">
-                    <img class="profile" src="John.jpg" alt="profile-pic">
-                </picture>
-                <div class="profile-section">
-
-                    <h2>Hi! I'm Jonathan.</h2>
-                    <p>I am a webdeveloper based in Stockholm, Sweden. I've started n education to become a Front
-                        end Developer.
-                        I do front-end development and I like to try new technologies
-                        and add them to my projects. Learning new frameworks/languages is not a problem and it's
-                        something that I always enjoy doing!
-                        For now im learning <span>Javascript</span> & CSS in depth. But i
-                        also have knowledge of Javascript. Hire me </p>
-                </div><!-- .card-content -->
+    <header class="header">
+        <!-- <h1 class="logo">J.L.N. </h1> -->
+        <nav class="header-row">
+            <ul>
+                <li class="list-header" id="about"><span>About</span></li>
+                <li class="list-header" id="portfolio"><span>Portfolio</span></li>
+                <li class="list-header" id="Contact"><span>Contact</span></li>
+            </ul>
+        </nav>
 
 
 
+    </header>
+    <main class="body">
 
-            </div>
-            </div>
-            <div class="show--mobile">
-                <p hidden>I am a webdeveloper based in Stockholm, Sweden. I've started n education to become a Front
-                    end Developer.
 
-            </div>
-        </section>
+        <ul class="box-wrapper">
+            <div class="box boxa">BOX A</div>
+            <div class="box boxb">BOX B</div>
+            <div class="header__text-box">
+                <h1 class=heading-primary>
+                    <span class="heading-primary--main">Jonathan</span>
+                    <span class="heading-primary--sub">Front-End developer</span>
+                </h1>
+
+                <!-- <a href="#" class="btn btn--white btn--animated">My Work</a> -->
+
+        </ul>
+        </div>
     </main>
 
-    <section class="boxes">
-        <div class="box">
-            <i class="fas fa-database fa-5x"></i>
-            <h3>BACK-END</h3>
-            <p>For back-end development I mostly use NodeJS and MongoDB. Which helps me create secure webbapplication
-                and websites</p>
+    <article class="about-container">
+        <div class="img-profile">
+            <img src="img/roman.jpeg" id="astronomy" class="interests">
+            <img src="img/astronomy.jpeg" class="interests">
+            <img src="img/place.jpeg" class="interests">
         </div>
-        <div class="box">
-            <i class="fas fa-code fa-5x"></i>
-            <h3>FRONT-END</h3>
-            <p>All my code is versioned using Git and GitHub.My main JavaScript package manager is npm and my IDE is
-                Visual Studo Code using different extensions</p>
-        </div>
-    </section>
+        <div class="about">
+            <h1 class="about-header">Om Mig!</h1>
 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsum non quidem similique quod sequi
+                odit iste, perferendis earum fuga sed architecto libero fugit corrupti id? Ipsa veniam qui doloribus.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, doloremque fuga id dignissimos,
+                nostrum natus alias adipisci magni odit assumenda debitis, dicta amet! Temporibus nisi architecto,
+                aperiam fugit voluptate hic.
+
+            </p><br>
+            <i class="fas fa-graduation-cap fa-1x">KYH Front End</i>
+            <p>Im studying a two years education to Front end developer at KYH. </p><br>
+            <i class="fas fa-laptop-code fa-1x">Programming skills</i>
+            <p>HTML(5), CSS(3) and JS</p>
+        </div>
+
+
+    </article>
+    <div class="projects-title">
+            <h1>PROJECTS</h1>
+    </div>
     <main class="main-area">
+
 
         <div class="centered">
 
@@ -144,36 +139,21 @@
 
     </main>
     <footer class="footer-content">
-
-        <div class="footer-left">
-
-            <h3>Kontakta<span> mig</span></h3>
-            <div class="social-icons">
-                <ul>
-                    <li class="fas fa-envelope fa-3x"></li>
-                    <li class="fab fa-twitter fa-3x"></li>
-                    <li class="fab fa-linkedin fa-3x"></li>
-                    <li class="fab fa-github fa-3x"></li>
-                </ul>
+            <div class="name">
+                    <h3>&copy; 2018 Jonathan Nilsson</h3>
             </div>
-        </div>
+                    <ul class="social-icons">
+                        <li class="fas fa-envelope fa-2x"></li>
+                        <li class="fab fa-twitter fa-2x"></li>
+                        <li class="fab fa-linkedin fa-2x"></li>
+                        <li class="fab fa-github fa-2x"></li>
+                    </ul>
+                </div>
 
 
-
-
-        <div class="footer-right">
-            <form action="#" method="post">
-
-                <input type="text" name="email" placeholder="Email">
-                <textarea name="message" placeholder="Message"></textarea>
-                <button>DONT PUSH!</button>
-
-            </form>
-        </div>
     </footer>
-    <script>
-    </script>
+
 </body>
-<script src="app.js"></script>
+<script src="/js/app.js"></script>
 
 </html>
