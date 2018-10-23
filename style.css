@@ -190,7 +190,7 @@ nav ul li {
 }
 
 .card a {
-  color: black;
+  color: #0846b9;
 }
 
 .card-content {
@@ -205,6 +205,17 @@ nav ul li {
 
 .card-content p {
   font-size: 80%;
+}
+.cards .card:hover {
+  opacity: 0.3;
+  background-color: #fff;
+  border-top: 5px solid #0846b9;
+    border-left:8px solid #0846b9;
+  border-right: 8px solid #0846b9;
+  border-bottom: 8px solid #0846b9;
+  /* background: rgb(240, 237, 237);
+    border-top: 5px solid #0846b9; */
+
 }
 
 /*  <-----------   FOOTER SECTION  --------->  */
@@ -258,8 +269,17 @@ img {
     flex-wrap: wrap-reverse;
   }
   .footer-content {
-    background-color: orange;
-    justify-content: center;
+    display: flex;
+    /* background-color: orange; */
+    /* justify-content: center; */
+  }
+  .social-icons {
+    display:flex;
+    align-items: center;
+  }
+  .social-icons > li {
+    /* align-items: flex-end; */
+    padding:0px;
   }
 }
 
