@@ -46,7 +46,7 @@ table {
 /*      CSS PORTFOLIO By Jonathan Nilsson */
 body {
   font-family: "Oswald", sans-serif;
-  background-color: #D7E6F5;
+  background-color: white;
 }
 img {
   width: 3000%;
@@ -61,7 +61,7 @@ img {
   flex-wrap: wrap;
   height: 600px;
   list-style-type: none;
-  background-color: #fff;
+  background-color: white;
 
 }
 .boxa {
@@ -87,7 +87,7 @@ img {
 
 /* <<--------------------- HEADER ----------------------> >*/
 .header {
-    background-color: #fff;
+    background-color:white;
 }
 
 
@@ -137,18 +137,30 @@ nav ul li {
 
   }
 
+
 .header__text-box {
-  /* position: absolute;
-    top:40%;
-    left:50%; */
   display: flex;
   justify-content: center;
   transform: translate(-50%, -50%);
   text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  right: 50%;
 }
 .heading-primary {
   color: #104ab6;
   text-transform: uppercase;
+  text-shadow:
+  0.05em 0 black,
+  0 0.05em black,
+  -0.05em 0 black,
+  0 -0.05em black,
+  -0.05em -0.05em black,
+  -0.05em 0.05em black,
+  0.05em -0.05em black,
+  0.05em 0.05em black;
+
 
   backface-visibility: hidden;
   /* margin-bottom: 6rem; */
@@ -165,8 +177,8 @@ nav ul li {
 
 /*  <-----------   ABOUT SECTION  --------->  */
 .about-container{
-  background-color: #D7E6F5;
-    margin-top:170px;
+  background-color: White;
+    margin-top:70px;
 }
 .about {
   margin: 40px;
@@ -175,6 +187,7 @@ nav ul li {
 .about h1 {
   display: flex;
   justify-content: center;
+  font-size:4vw;
   padding: 10px;
 }
 
@@ -200,10 +213,14 @@ nav ul li {
     text-align: center;
     font-size: 32px;
 }
+.title {
+ font-size: 4vw;
+}
 .main-area {
-  background-color: #D7E6F5;
+  background-color: white;
   margin: 35px;
   margin-top:160px;
+
 }
 .centered {
     margin-top: 40px;
@@ -213,13 +230,16 @@ nav ul li {
     margin:10px;
 }
 .card {
-  background: lightgray;
+
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   grid-gap: 10px;
 
   font-weight: 100;
   margin-bottom: 2em;
   font-size: 22px;
+}
+.card img {
+  height:270px;
 }
 
 .card a {
@@ -239,21 +259,15 @@ nav ul li {
 .card-content p {
   font-size: 80%;
 }
-.cards .card:hover {
-  opacity: 0.3;
-  background-color: #fff;
-  border-top: 5px solid #0846b9;
-    border-left:8px solid #0846b9;
-  border-right: 8px solid #0846b9;
-  border-bottom: 8px solid #0846b9;
+#quiz {
 
+  height:350px;
 }
-
 /*  <-----------   FOOTER SECTION  --------->  */
 
 .footer-content {
   display: flex;
-  background-color: #F9F9F9;
+  background-color: white;
   justify-content: space-between;
   border-top: 1px solid #0846b9;
   width: 100%;
@@ -298,6 +312,7 @@ cursor: pointer;
   }
 
   .card {
+
     flex: 0 1 calc(50% - 1em);
   }
 }
@@ -343,6 +358,6 @@ img {
 
 
   .card {
-    flex: 0 1 calc(25% - 1em);
+    flex: 0 1 calc(45% - 1em);
   }
 }

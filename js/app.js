@@ -32,3 +32,4 @@ function scrollIt (element) {
     left: 0,
     top: element.offsetTop
   })
+}
