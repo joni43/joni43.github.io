@@ -18,15 +18,30 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="box-wrapper">
         <!-- <h1 class="logo">J.L.N. </h1> -->
-        <nav class="header-row">
-            <ul>
-                <li class="list-header" id="about"><span>About</span></li>
-                <li class="list-header" id="portfolio"><span>Portfolio</span></li>
-                <li class="list-header" id="Contact"><span>Contact</span></li>
-            </ul>
-        </nav>
+
+
+            <div class="box boxa"></div>
+            <div class="box boxb"></div>
+
+            <div class="header__text-box">
+                <h1 class=heading-primary>
+
+                    <span class="heading-primary--main">Jonathan</span>
+                    <span class="heading-primary--sub">Front-End developer</span>
+
+                </h1>
+
+            </div>
+            <div class="header-row">
+                <ul>
+                    <li class="list-header" id="about"><span>About</span></li>
+                    <li class="list-header" id="portfolio"><span>Portfolio</span></li>
+                    <li class="list-header" id="Contact"><span>Contact</span></li>
+                </ul>
+            </div>
+
 
 
 
@@ -34,124 +49,121 @@
     <main class="body">
 
 
-        <ul class="box-wrapper">
-            <li class="box boxa"></li>
-            <li class="box boxb"></li>
-            <li class="header__text-box">
-                <h1 class=heading-primary>
-                    <span class="heading-primary--main">Jonathan</span>
-                    <span class="heading-primary--sub">Front-End developer</span>
-                </h1>
-            </li>
-    </ul>
 
 
-    <article class="about-container">
-        <div class="img-profile">
-            <img src="img/roman.jpeg" alt="photo of roman" class="interests">
-            <img src="img/astronomy.jpeg" alt="photo of stars" class="interests">
-            <img src="img/place.jpeg" alt="photo of museum" class="interests">
-        </div>
-        <div class="about">
-            <h1 class="about-header">Om Mig!</h1>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsum non quidem similique quod sequi
-                odit iste, perferendis earum fuga sed architecto libero fugit corrupti id? Ipsa veniam qui doloribus.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, doloremque fuga id dignissimos,
-                nostrum natus alias adipisci magni odit assumenda debitis, dicta amet! Temporibus nisi architecto,
-                aperiam fugit voluptate hic.
+        <article class="about-container">
+            <div class="img-profile">
+                <img src="img/roman.jpeg" alt="photo of roman" class="interests">
+                <img src="img/astronomy.jpeg" alt="photo of stars" class="interests">
+                <img src="img/place.jpeg" alt="photo of museum" class="interests">
+            </div>
+            <div class="about">
+                <h1 class="about-header">Om Mig!</h1>
 
-            </p><br>
-            <i class="fas fa-graduation-cap fa-1x">KYH Front End</i>
-            <p>Im studying a two years education to Front end developer at KYH. </p><br>
-            <i class="fas fa-laptop-code fa-1x">Programming skills</i>
-            <p>HTML(5), CSS(3) and JS</p>
-        </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsum non quidem similique quod
+                    sequi
+                    odit iste, perferendis earum fuga sed architecto libero fugit corrupti id? Ipsa veniam qui
+                    doloribus.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, doloremque fuga id dignissimos,
+                    nostrum natus alias adipisci magni odit assumenda debitis, dicta amet! Temporibus nisi architecto,
+                    aperiam fugit voluptate hic.
+
+                </p><br>
+                <i class="fas fa-graduation-cap fa-1x">KYH Front End</i>
+                <p>Im studying a two years education to Front end developer at KYH. </p><br>
+                <i class="fas fa-laptop-code fa-1x">Programming skills</i>
+                <p>HTML(5), CSS(3) and JS</p>
+            </div>
 
 
-    </article>
+        </article>
 
-    <section class="main-area">
+        <section class="main-area">
             <div class="projects-title">
-                    <h3>PROJECTS</h3>
+                <h3>PROJECTS</h3>
             </div>
 
-        <div class="centered">
+            <div class="centered">
 
 
-            <section class="cards">
+                <section class="cards">
 
-                <article class="card">
-                    <a href="https://github.com/joni43/githubfinder">
-                        <picture class="thumbnail">
-                            <img src="/img/finder.png" alt="finder img project">
-                        </picture>
-                        <div class="card-content">
+                    <article class="card">
+                        <a href="https://github.com/joni43/githubfinder">
+                            <picture class="thumbnail">
+                                <img src="/img/finder.png" alt="finder img project">
+                            </picture>
+                            <div class="card-content">
 
-                            <h2>Jekyll Blog</h2>
-                            <p>TBuilt using Jekyll and Sass.CSS preprocessor.Uses open graph for easy sharing on social
-                                media</p>
-                        </div><!-- .card-content -->
+                                <h2>Jekyll Blog</h2>
+                                <p>TBuilt using Jekyll and Sass.CSS preprocessor.Uses open graph for easy sharing on
+                                    social
+                                    media</p>
+                            </div><!-- .card-content -->
 
-                    </a>
+                        </a>
 
-                </article><!-- .card -->
+                    </article><!-- .card -->
 
-                <article class="card">
-                    <a href="#">
-                        <picture class="thumbnail">
-                            <img src="/img/github.png" alt="github img project">
-                        </picture>
-                        <div class="card-content">
-                            <h2>Github finder</h2>
-                            <p>Simple application to fetch Gihub API so you can search for github user and get their
-                                latest repos and
-                                info.</p>
-                        </div><!-- .card-content -->
-                    </a>
-                </article><!-- .card -->
+                    <article class="card">
+                        <a href="#">
+                            <picture class="thumbnail">
+                                <img src="/img/github.png" alt="github img project">
+                            </picture>
+                            <div class="card-content">
+                                <h2>Github finder</h2>
+                                <p>Simple application to fetch Gihub API so you can search for github user and get
+                                    their
+                                    latest repos and
+                                    info.</p>
+                            </div><!-- .card-content -->
+                        </a>
+                    </article><!-- .card -->
 
-                <article class="card">
-                    <a href="#">
-                        <picture class="thumbnail">
-                            <img src="/img/jekyll.jpg" alt="jekyll blog img">
-                        </picture>
-                        <div class="card-content">
-                            <h2>Jekyll Blog</h2>
-                            <p>Built using Jekyll and Sass.CSS preprocessor.Uses open graph for easy sharing on social
-                                media. </p>
-                        </div><!-- .card-content -->
-                    </a>
-                </article><!-- .card -->
+                    <article class="card">
+                        <a href="#">
+                            <picture class="thumbnail">
+                                <img src="/img/jekyll.jpg" alt="jekyll blog img">
+                            </picture>
+                            <div class="card-content">
+                                <h2>Jekyll Blog</h2>
+                                <p>Built using Jekyll and Sass.CSS preprocessor.Uses open graph for easy sharing on
+                                    social
+                                    media. </p>
+                            </div><!-- .card-content -->
+                        </a>
+                    </article><!-- .card -->
 
-                <article class="card">
-                    <a href="#">
-                        <picture class="thumbnail">
-                            <img src="/img/quiz.png" alt="quiz app img">
-                        </picture>
-                        <div class="card-content">
-                            <h2>Quiz application </h2>
-                            <p>This is a quiz where the questions are fetched from an API. Save score on localstorage.</p>
-                        </div><!-- .card-content -->
-                    </a>
-                </article><!-- .card -->
+                    <article class="card">
+                        <a href="#">
+                            <picture class="thumbnail">
+                                <img src="/img/quiz.png" alt="quiz app img">
+                            </picture>
+                            <div class="card-content">
+                                <h2>Quiz application </h2>
+                                <p>This is a quiz where the questions are fetched from an API. Save score on
+                                    localstorage.</p>
+                            </div><!-- .card-content -->
+                        </a>
+                    </article><!-- .card -->
 
-            </section><!-- .cards -->
+                </section><!-- .cards -->
 
-        </div><!-- .centered -->
+            </div><!-- .centered -->
 
-    </section>
-</main>
+        </section>
+    </main>
     <footer class="footer-content">
-            <div class="name">
-                    <h3>&copy; 2018 Jonathan Nilsson</h3>
-            </div>
-                    <ul class="social-icons">
-                        <li class="fas fa-envelope fa-2x"></li>
-                        <li class="fab fa-twitter fa-2x"></li>
-                        <li class="fab fa-linkedin fa-2x"></li>
-                        <li class="fab fa-github fa-2x"></li>
-                    </ul>
+        <div class="name">
+            <h3>&copy; 2018 Jonathan Nilsson</h3>
+        </div>
+        <ul class="social-icons">
+            <li class="fas fa-envelope fa-2x"></li>
+            <li class="fab fa-twitter fa-2x"></li>
+            <li class="fab fa-linkedin fa-2x"></li>
+            <li class="fab fa-github fa-2x"></li>
+        </ul>
 
     </footer>
 
