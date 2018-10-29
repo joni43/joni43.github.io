@@ -66,7 +66,7 @@ img {
 }
 .boxa {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/img/pexels-photo-160107.jpeg);
+    url(/img/pexel.jpeg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -170,7 +170,10 @@ nav ul li {
   font-size: 3rem;
   font-weight: 200;
   letter-spacing: 2rem;
-
+}
+.heading-primary--sub {
+  padding-right: 80px;
+  font-size: 1.5rem;
 }
 
 
@@ -184,7 +187,7 @@ nav ul li {
   margin: 40px;
   width: 400px;
 }
-.about h1 {
+.about h2 {
   display: flex;
   justify-content: center;
   font-size:4vw;
@@ -309,6 +312,7 @@ cursor: pointer;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
   }
 
   .card {
@@ -328,20 +332,16 @@ img {
 }
 @media screen and (max-width: 800px) {
   .content {
-    /* background-color:green; */
     flex-wrap: wrap-reverse;
   }
   .footer-content {
     display: flex;
-    /* background-color: orange; */
-    /* justify-content: center; */
   }
   .social-icons {
     display:flex;
     align-items: center;
   }
   .social-icons > li {
-    /* align-items: flex-end; */
     padding:0px;
   }
   .heading-primary--main {
@@ -352,11 +352,6 @@ img {
 }
 
 @media screen and (min-width: 60em) {
-  .cards {
-    /* background-color: green; */
-  }
-
-
   .card {
     flex: 0 1 calc(45% - 1em);
   }
