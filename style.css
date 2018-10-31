@@ -1,0 +1,366 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*      CSS PORTFOLIO By Jonathan Nilsson */
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: white;
+}
+img {
+  width: 3000%;
+}
+* {
+  margin: 0;
+}
+.box-wrapper {
+  margin: 1px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 600px;
+  list-style-type: none;
+  background-color: white;
+
+}
+.boxa {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/img/pexel.jpeg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  flex: 0 0 100%;
+  width: 45%;
+}
+.boxb {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/img/study.jpeg);
+
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  flex: 0 0 65%;
+  width: 53%;
+}
+
+
+/* <<--------------------- HEADER ----------------------> >*/
+.header {
+    background-color:white;
+}
+
+
+.header > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header-row {
+  display: flex;
+  /* justify-content: center; */
+  font-size: 1em;
+}
+.header-row span {
+  color: #104ab6;
+  border-bottom: 1px solid rgb(20, 26, 80);
+}
+nav ul {
+  display: flex;
+  /* width: 8%; */
+  list-style: none;
+}
+nav ul li {
+  padding: 1em;
+}
+.header-row span:hover {
+  border-bottom: none;
+}
+.list-header span {
+  cursor: pointer;
+  }
+  .header-row {
+    margin-top:40px;
+
+  }
+  .header-row ul {
+  list-style:none;
+  display:flex;
+  align-items: left;
+
+  padding:12px;
+  }
+  .header-row ul li  {
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 6px;
+
+  }
+
+
+.header__text-box {
+  display: flex;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  right: 50%;
+}
+.heading-primary {
+  color: #104ab6;
+  text-transform: uppercase;
+  text-shadow:
+  0.05em 0 black,
+  0 0.05em black,
+  -0.05em 0 black,
+  0 -0.05em black,
+  -0.05em -0.05em black,
+  -0.05em 0.05em black,
+  0.05em -0.05em black,
+  0.05em 0.05em black;
+
+
+  backface-visibility: hidden;
+  /* margin-bottom: 6rem; */
+}
+.heading-primary--main {
+  display: block;
+  font-size: 3rem;
+  font-weight: 200;
+  letter-spacing: 2rem;
+}
+.heading-primary--sub {
+  padding-right: 80px;
+  font-size: 1.5rem;
+}
+
+
+
+/*  <-----------   ABOUT SECTION  --------->  */
+.about-container{
+  background-color: White;
+    margin-top:70px;
+
+}
+.about {
+  margin: 40px;
+  width: 400px;
+}
+.about h2 {
+  display: flex;
+  justify-content: center;
+  font-size:4vw;
+  padding: 10px;
+}
+
+.img-profile {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.img-profile img {
+  margin: 10px;
+  border: 3px solid #000;
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+  max-width: 18vw;
+  align-items: flex-end;
+}
+
+/*  <-----------   PROJECTS SECTION  --------->  */
+.projects-title {
+
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    text-align: center;
+    font-size: 32px;
+}
+.title {
+ font-size: 4vw;
+}
+.main-area {
+  background-color: white;
+  margin: 35px;
+  margin-top:160px;
+
+}
+.centered {
+    margin-top: 40px;
+}
+.cards {
+
+    margin:10px;
+}
+.card {
+  /* flex: 1 360px; */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  grid-gap: 10px;
+
+  font-weight: 100;
+  margin-bottom: 2em;
+  font-size: 22px;
+}
+.card img {
+  height:270px;
+}
+
+.card a {
+  color: black;
+}
+
+.card-content {
+  padding: 1.4em;
+}
+
+.card-content h2 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.card-content p {
+  font-size: 80%;
+}
+#quiz {
+
+  height:350px;
+}
+/*  <-----------   FOOTER SECTION  --------->  */
+
+.footer-content {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  border-top: 1px solid #0846b9;
+  width: 100%;
+  color:#104ab6;
+}
+.copyright {
+    display:flex;
+    justify-content: flex-start;
+
+}
+.name {
+    padding:40px;
+}
+.number {
+    display:flex;
+    justify-content: center;
+}
+/* <----Footer social icons -----> */
+
+.social-icons {
+display: flex;
+justify-content: flex-end;
+list-style: none;
+  margin-right: 80px;
+}
+
+.social-icons  > li {
+border-radius: 50%;
+text-align: center;
+padding: 1.1em;
+color: #2a5daf;
+cursor: pointer;
+}
+
+/*  <-----------   MEDIA QUERIES SECTION  --------->  */
+@media screen and (max-width: 590px) {
+.header-row ul{
+  flex-direction:column;
+  align-content: flex-end;
+}}
+
+@media screen and (min-width: 440px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+
+  .card {
+    flex: 0 1 calc(50% - 1em);
+  }
+
+}
+img {
+  width: 300px;
+}
+
+img {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 800px) {
+  .content {
+    flex-wrap: wrap-reverse;
+  }
+
+  .footer-content {
+    display: flex;
+  }
+  .social-icons {
+    display:flex;
+    align-items: center;
+  }
+  .social-icons > li {
+    padding:0px;
+  }
+  .heading-primary--main {
+    display: flex;
+    letter-spacing: 1rem;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .card {
+    flex: 0 1 calc(45% - 1em);
+  }
+}
